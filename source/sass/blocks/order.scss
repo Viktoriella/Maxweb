@@ -1,0 +1,23 @@
+.order {
+	display: flex;
+}
+
+.order__button {
+	color: #ffffff;
+	background-color: $orange;
+}
+
+.order__phone {
+	width: 135px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #f8f8f8;
+	border: 1px solid #e1e1e1;
+
+	&::placeholder {
+		font-family: "SF UI Display", sans-serif;
+		color: #616161;
+	}
+}

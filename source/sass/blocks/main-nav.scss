@@ -1,0 +1,14 @@
+.main-nav__list {
+	@include reset-list();
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav__link {
+	padding-right: 36px;
+	padding-left: 36px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	color: #616161;
+	text-decoration: none;
+}

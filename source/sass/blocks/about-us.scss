@@ -1,0 +1,97 @@
+.about-us {
+	width: 824px;
+	min-height: 630px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	text-align: center;
+	background-image: url("../img/bulb.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;	
+}
+
+.about-us__title {
+	@include title();
+}
+
+.about-us__subtitle {
+	@include reset();
+	width: 520px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+	line-height: 36px;
+	color: #616161;
+}
+
+.about-us__subtitle--accent {
+	font-weight: bold;
+	color: $orange;
+}
+
+.about-us__list {
+	@include reset-list();
+	width: 397px;
+	margin-left: auto;
+}
+
+.about-us__item {
+	position: relative;
+	padding-top: 85px;
+
+	&::before {
+		@include pseudo();
+		padding: 5px;
+		color: $orange;
+		font-size: 16px;
+		line-height: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 17px;
+		height: 17px;
+		border: 1px solid $orange;
+		border-radius: 50%;
+		background-color: #ffffff;
+		z-index: 2;
+	}
+
+	&::after {
+		@include pseudo();
+		width: 1px;
+		background-color: $orange;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+}
+
+.about-us__item--1::before {
+	content: "1";
+	top: 30px;
+}
+
+.about-us__item--1::after {
+	height: 20px;
+	top: 58px;
+}
+
+.about-us__item--2::before,
+.about-us__item--3::before {
+	top: 25px;
+}
+
+.about-us__item--2::after,
+.about-us__item--3::after {
+	height: 60px;
+	top: 10px;
+}
+
+.about-us__item--2::before {
+	content: "2";
+}
+
+.about-us__item--3::before {
+	content: "3";
+}

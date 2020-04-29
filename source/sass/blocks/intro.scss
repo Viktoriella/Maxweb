@@ -1,0 +1,25 @@
+.intro {
+	padding-top: 90px;
+	padding-right: 580px;
+	padding-bottom: 210px;
+}
+
+.intro__title {
+	@include title();
+	width: 670px;
+}
+
+.intro__text {
+	@include reset();
+	width: 340px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	font-size: 24px;
+	line-height: 36px;
+	color: #616161;
+}
+
+.intro__text--accent {
+	color: $orange;
+	font-weight: bold;
+}
